@@ -104,9 +104,9 @@ noremap <leader>ss :call StripWhitespace ()<CR>
 
 " http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
 if exists('+colorcolumn')
-    set colorcolumn=120
+    set colorcolumn=100
 else
-    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>100v.\+', -1)
 endif
 
 " Paste mode
