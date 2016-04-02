@@ -66,8 +66,18 @@ noremap <leader>W :w !sudo tee %<CR>
 " Trigger NERDTree
 noremap <leader>n :NERDTree<CR>
 
-" Remap :W to :w
-cnoreabbrev W w
+" Remap typos :W to :w
+if has("user_commands")
+    command! -bang -nargs=? -complete=file E e<bang> <args>
+    command! -bang -nargs=? -complete=file W w<bang> <args>
+    command! -bang -nargs=? -complete=file Wq wq<bang> <args>
+    command! -bang -nargs=? -complete=file WQ wq<bang> <args>
+    command! -bang Wa wa<bang>
+    command! -bang WA wa<bang>
+    command! -bang Q q<bang>
+    command! -bang QA qa<bang>
+    command! -bang Qa qa<bang>
+endif
 
 " Indent/unident block (<leader>]) (<leader>[)
 nnoremap <leader>] >i{<CR>
@@ -91,3 +101,24 @@ function! StripWhitespace ()
     call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
+
+" http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
+if exists('+colorcolumn')
+    set colorcolumn=120
+else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+endif
+
+" Paste mode
+set paste
+
+" Syntastic
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
