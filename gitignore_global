@@ -11,9 +11,14 @@
 *.mode2v3
 xcuserdata
 
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
 # Misc
 .env
 .DS_Store
 .svn
 *.swp
 .*.swp
+

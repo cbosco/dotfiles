@@ -110,7 +110,7 @@ else
 endif
 
 " Paste mode
-set paste
+" set paste
 
 " Syntastic
 
@@ -123,6 +123,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_html_checkers = ['handlebars']
 
 " Override eslint with local version where necessary.
 let local_eslint = finddir('node_modules', '.;') . '/.bin/eslint'
