@@ -11,20 +11,12 @@ alias la='ls -A'
 
 # git
 alias gs='git status'
-alias gl='git pull'
-alias gp='git push'
+alias gpr='git pull --rebase'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias ga='git add -u'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
 alias gst='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-
-# staticmatic
-alias sm='staticmatic'
 
 #tmux
 alias tm="tmux"
