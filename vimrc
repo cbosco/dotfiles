@@ -133,3 +133,6 @@ endif
 if executable(local_eslint)
   let g:syntastic_javascript_eslint_exec = local_eslint
 endif
+
+" vim-jsx
+let g:jsx_ext_required = 0 " not just .jsx files
