@@ -8,6 +8,7 @@ Requirements
 ------------
 
 1. Bash 4+ (and bash_completion, if desired)
+2. Cmake
 
 ### Chris' idiot-proof pre-installation on OSX
 
@@ -38,6 +39,20 @@ skipping or aborting the installation.
 I recommend moving any existing shell configuration into ~/.localrc,
 which will be sourced if it exists.
 
+### Vim
+
+After installing, open `vim` and run:
+
+    :PluginInstall
+
+#### YouCompleteMe
+
+This Vim plugin requires a compile step (after installing `cmake`):
+
+    cd ~/.vim/bundle/YouCompleteMe
+    ./install.py
+
+
 ### Sensible OS X defaults
 
 When setting up a new Mac, you may want to set some sensible OS X defaults:
@@ -50,6 +65,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 
 * Bash 4 (see above)
 * tmux (get via brew)
+* cmake (get via brew)
 
 Environment
 -----------
