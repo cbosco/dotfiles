@@ -22,6 +22,9 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
 #tmux
 alias tm="tmux"
+alias tml="tmux list-sessions"
+alias tma="tmux attach-session -t $1"
+alias tmn="tmux new -s $1"
 
 # misc
 alias reload='. ~/.bash_profile'
