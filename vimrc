@@ -130,6 +130,14 @@ function! StripWhitespace ()
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
+" Pressing Ctrl-L leaves insert mode in evim, so why not in regular vim, too.
+noremap <C-L> <Esc>
+noremap! <C-L> <Esc>
+
+" Dvorak movement, everything is fine except L (move to Dvorak S)
+noremap s l
+noremap <C-W>s <C-W>l
+
 " http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
 if exists('+colorcolumn')
     set colorcolumn=100
