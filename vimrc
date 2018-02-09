@@ -130,9 +130,8 @@ function! StripWhitespace ()
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
-" Pressing Ctrl-L leaves insert mode in evim, so why not in regular vim, too.
-noremap <C-L> <Esc>
-noremap! <C-L> <Esc>
+noremap <C-c> <Esc>
+noremap! <C-c> <Esc>
 
 " Dvorak movement, everything is fine except L (move to Dvorak S)
 noremap s l
