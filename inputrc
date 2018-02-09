@@ -12,8 +12,12 @@
 "\e\e[D": backward-word
 
 # History completion
+# (arrows)
 "\e[B": history-search-forward
 "\e[A": history-search-backward
+# (Ctrl-P, Ctrl-N Emacs-style)
+"\C-n": history-search-forward
+"\C-p": history-search-backward
 
 # Case-insensitive completion
 set completion-ignore-case on
