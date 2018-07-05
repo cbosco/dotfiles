@@ -6,4 +6,6 @@ localrc
 *.elc
 *.dat
 vim/vim
+vim/bundle
+vim/.netrwhist
 bash/bash
