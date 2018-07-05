@@ -1,0 +1,96 @@
+{
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.showTabs": false,
+    "vim.incsearch": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "window.zoomLevel": -1,
+    "search.exclude": {
+        "**/node_modules/anchor-server-common": false
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<C-w>",
+                "s"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<C-w>",
+                "d"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-w>",
+                "s"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<C-w>",
+                "d"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<C-w>",
+                "s"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<C-w>",
+                "d"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        }
+    ],
+    "prettier.eslintIntegration": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnSaveTimeout": 3000
+}
