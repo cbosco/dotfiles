@@ -61,6 +61,16 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
+### Terminal
+
+_(A reminder to myself)_
+
+1. Switch to Professional profile
+2. In profile pane, go to Keyboard, and check _Use Option as Meta key_
+
+![image](https://user-images.githubusercontent.com/308032/53662441-e7689b80-3c30-11e9-9b15-3025d7a76e31.png)
+
+
 ### Anything not immediately available on OSX
 
 * Bash 4 (see above)
