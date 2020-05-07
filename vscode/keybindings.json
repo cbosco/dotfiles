@@ -1,0 +1,27 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+w l",
+        "command": "extension.vim_navigateRight",
+        "when": "vim.active && vim.use<C-w> && !editorTextFocus"
+    },
+    // "l" moved for ergonomics in dvorak
+    {
+        "key": "ctrl+w s",
+        "command": "extension.vim_navigateRight",
+        "when": "vim.active && vim.use<C-w> && !editorTextFocus"
+    },
+    {
+        "key": "ctrl+w h",
+        "command": "extension.vim_navigateLeft",
+        "when": "vim.active && vim.use<C-w> && !editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "ctrl+cmd+b",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    }
+]
