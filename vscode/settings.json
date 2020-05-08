@@ -1,9 +1,7 @@
 {
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.showTabs": false,
     "vim.incsearch": true,
-    "window.zoomLevel": 0,
     "search.exclude": {
         "**/node_modules/anchor-server-common": false
     },
@@ -98,10 +96,10 @@
     "explorer.openEditors.visible": 0,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
-    "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": false,
     "javascript.suggest.autoImports": false,
     "javascript.preferences.quoteStyle": "single",
     "debug.onTaskErrors": "debugAnyway",
-    "editor.suggest.statusBar.visible": true
+    "editor.suggest.statusBar.visible": true,
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false
 }
