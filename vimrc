@@ -48,7 +48,7 @@ set autoread " Set to auto read when a file is changed from the outside
 set showmode " Show mode in bottom of window
 set matchpairs+=<:> " Add XML style elements to matching
 set backspace=indent,eol,start
-set cursorline " Highlight current line
+set diffopt-=internal
 set diffopt+=iwhite " Ignore whitespace changes (focus on code changes)
 set encoding=utf-8 nobomb " BOM often causes trouble
 set esckeys " Allow cursor keys in insert mode.
